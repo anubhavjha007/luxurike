@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;    
+}
+
+.nav{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    top:0px;
+    width:100%;
+  
+
+}
+.nav-top{
+    display:flex;
+    background-color: #ffffff;
+    height:5em;
+    justify-content: center;
+    align-items: center;
+    padding-left:3em;
+    padding-right: 3em;
+    padding-top:1em;
+    gap:2rem;
+   
+
+}
+.logo{
+    color:rgb(0, 0, 0);
+    font-family: "Antic Didone", serif; 
+    font-weight:500;
+    font-size:2.5em;
+    letter-spacing: 0.5em;
+}
+.menu, .search, .callUs, .wishList, .account{
+   
+    font-size: small;
+    font-weight:600;
+    color:rgb(0, 0, 0);
+    
+}
+.nav a{
+    text-decoration: none;
+    font-family: "Antic Didone", serif;
+    font-size: small;
+    font-weight:600;
+    color:rgb(0, 0, 0);
+   
+}
+.search{
+    margin-right: auto;
+}
+.callUs {
+    margin-left:auto;
+}
+.nav-bottom{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:5em;
+    background-color: white;
+}
+.searchBar{
+    height:75%;
+    width:90%;
+    border-radius: 30px;
+    letter-spacing:0.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border-bottom-color: black ;
+    padding-left: 2%;
+    border-width: 1.4px;
+}
+@media (min-width:785px){
+.nav-bottom{
+    display:none;
+}
+.nav-top{
+    height: 8em;
+    padding-top:4em;
+}
+.nav-top, .nav-bottom{
+      background-color: rgba(251, 251, 251, 0.812);
+}
+
+
+}
+@media (max-width:900px){
+    .callUs, .wishList{
+        display: none;
+        
+    }
+    .account{
+        margin-left: auto;
+    }
+    
+}
+@media (max-width:785px){
+    .search{
+        display:none;
+    }
+    .menu{
+        margin-right:auto;
+    }
+    .heroSection{
+        margin-top: 10em;
+    }
+    
+    
+    
+}
+@media (max-width:570px){
+    .nav-top, .nav-bottom{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .logo{
+        letter-spacing:0.1em ;
+    }
+}
+@media (max-width:380px){
+    .logo{
+        letter-spacing: 0;
+    }
+}
+
+.heroSection{
+    display: flex;
+    background-image:url("photosLuxurike/hero.jpg");
+    background-size: cover;
+    height:38em;
+    justify-content: flex-end;
+    align-items: center;
+    letter-spacing: 2rem;
+    font-family: "Antic Didone", serif; 
+
+
+}
+@media (min-width:785px){
+  .nav-top{
+    padding-bottom:5em;
+ }
+}
+.artHeading{
+    height:10em;
+    background-color: rgba(255, 255, 255, 0);
+    width:100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    color:white;
+    font-size: 2em;
+    transform: translateY(130px);
+    padding-left:1em;
+   
+}
+#art{
+    text-shadow: 6px 6px 10px rgb(0, 0, 0) ;
+}
+@media (max-width:455px)
+{
+    
+    #art{
+    font-size:2rem;
+    letter-spacing: 1rem;
+    }
+}
+.art-collection-heading, #men-heading , #women-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    background-color: white;
+    font-family: "Antic Didone", serif; 
+    font-size: 3rem;
+    
+}
+
+.artSection , .men-display-section , .women-display-section{
+    /* border: 2px solid black; */
+    height:70em;
+    padding: 4em;
+}
+.art1Section , .art2Section , .men-display1, .men-display2 , .women-display1 , .women-display2 {
+    display: flex;
+    gap: 2em;
+    height:30em;
+    /* border: 2px solid red;  */
+    
+}
+.art1{
+    height:30em;
+    width:25em;
+    box-shadow: 20px 20px 25px rgb(110, 38, 4);
+    object-fit: cover;
+}
+.art2, .men-display-image-1,  .men-display-image-2 , .women-display-image-1 , .women-display-image-2{
+height:30em;
+    width:25em;
+    box-shadow: 20px 20px 25px rgb(65, 65, 65);
+}
+#art1 , #art2 {
+    
+    height:100%;
+    width:100%
+}
+.art1Article ,.art2Article, .men-display-article-1 , .men-display-article-2 ,  .women-display-article-1 , .women-display-article-2{
+    /* border: 2px solid black; */
+    height: auto ;
+    width: 65%;
+    font-family: "Antic Didone", serif; 
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+}
+
+.men-display-image-1, .men-display-image-2  , .women-display-image-1, .women-display-image-2 {
+    padding: 0;
+
+}
+@media (min-width: 600px) and (max-width:900px){
+    .art1{
+        height: 15em;
+        width: 10em;
+         box-shadow: 10px 10px 15px rgb(110, 38, 4);;
+    }
+    .art2, .men-display-image-1, .men-display-image-2 , .women-display-image-1, .women-display-image-2{
+         height: 15em;
+         width: 10em;
+        box-shadow: 10px 10px 15px rgb(65,65,65) ;
+    }
+    .art1Article, .art2Article, .men-display-article-1, .men-display-article-2 , .women-display-article-1 , .women-display-article-2{
+        font-size: 1rem;
+        height: 70%;
+    }
+    .art-collection-heading , #men-heading , #women-heading{
+        font-size: 2rem;
+    }
+    .art1Section, .art2Section, .men-display1, .men-display2  , .women-display1 , .women-display2{
+        height: 20em;
+    }
+}
+@media (min-width:300px) and (max-width:650px){
+    .art1{
+        height: 7em;
+        width:5em;
+         box-shadow: 10px 10px 10px rgb(110, 38, 4);;
+    }
+    .art2, .men-display-image-1, .men-display-image-2 , .women-display-image-1 , .women-display-image-2{
+        height: 7em;
+        width:5em;
+        box-shadow: 10px 10px 10px rgb(65,65,65);;
+    }
+    .art1Article , .art2Article, .men-display-article-1 , .men-display-article-2 , .women-display-article-1 , .women-display-article-2{
+        font-size: 0.8rem;
+        height:30%;
+    }
+    .art-collection-heading , #men-heading , #women-heading{
+        font-size: 1rem;
+    }
+    .art1Section, .art2Section , .men-display1 , .men-display2 , .women-display1 ,.women-display2{
+        height: 15em;
+    }
+}
+/* YOU WERE RESIZING THE WRONG ELEMENT
+YOU WERE RESIZING THE BOX , DIV INSTEAD OF IMG */
+.productImage img, .men-productImage img , .women-productImage img{
+    height: 15em;
+    width: 10em;
+    object-fit:cover;
+}
+.productCaption , .men-productCaption , .women-productCaption{
+    font-family: "Antic Didone", serif;
+    height:2em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2rem;
+    font-weight:900;
+    margin-top: 1em;
+}
+.productImage, .men-productImage, .women-productImage{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.artProduct-grid,.menProduct-grid , .womenProduct-grid{
+    display:grid;
+    gap: 5em;
+    /* border: 2px solid red; */
+    grid-template-columns: repeat(auto-fit,10em);
+    justify-content: center;
+}
+/* for RESPONSIVE GRID AND HEIGHT BLANK SPACE ISSUE */
+@media (min-width:640px) and (max-width:890px){
+    .artProduct-grid, .menProduct-grid , .womenProduct-grid{
+        grid-template-columns: 10em 10em ;
+    }
+}
+@media (min-width: 1125px) and (max-width:1850px){
+    .artProduct-grid , .menProduct-grid , .womenProduct-grid{
+        grid-template-columns: 10em 10em 10em 10em;
+    }
+}
+@media (max-width:902px){
+    .artSection , .men-display-section , .women-display-section{
+        height: 45em;
+    }
+}
+@media (max-width:650px){
+    .artSection , .men-display-section , .women-display-section{
+        height:35em;
+    }
+}
+
+/* MEN'S LUXURY CSS */
+
+.men-luxury img , .women-luxury img{
+    display: flex;
+    height:100%;
+    width:100%;  
+    
+}  
+#men-heading-2 , #women-heading-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-family: "Antic Didone", serif; 
+    font-size: 1.3rem;
+}
+/* RESPONSIVE FOR MEN DISPLAY IMAGE HEIGHT */
+@media (min-width:1350px){
+    .men-display-image-1, .men-display-image-2, .women-display-image-1 , .women-display-image-2{
+        height:25em;
+    }
+}
+@media (min-width:901px) and (max-width:1350px)
+{
+    .men-display-image-1, .men-display-image-2 , .women-display-image-1  , .women-display-image-2{
+        height:23em;
+    }
+}
+@media (max-width:900px){
+    .men-display-image-1, .men-display-image-2 , .men-display-image-1 , .women-display-image-2{
+        height:10em;
+    }
+}
+@media (max-width:650px){
+     .men-display-image-1, .men-display-image-2  , .women-display-image-1 , .women-display-image-2{
+        height:5em;
+    }
+}
+
+/* MEN'S SECTION PRODUCT GRID CSS */
+/* copy pasted above in art product grid section and media */
+/* WOMEN'S SECTION PRODUCT GRID CSS */
+/* copy pasted above in ART AND MEN product grid section and media */
+
+/* footer css */
+/* Luxury Footer Styling */
+.luxury-footer {
+  background-color: #000000; 
+  color: #baaf9f; 
+  font-family: 'Marcellus', 'Didot', 'Playfair Display', serif; 
+  padding: 80px 0 40px 0;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr; /* Generous spacing for brand and newsletter */
+  gap: 40px;
+}
+
+/* Typography & Links */
+.luxury-footer h3 {
+  color: #f4f1ea; /* Brighter, crisp off-white for headers */
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.luxury-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.luxury-footer ul li {
+  margin-bottom: 12px;
+}
+
+.luxury-footer a {
+  color: #a39785;
+  text-decoration: none;
+  transition: color 0.4s ease;
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif; /* Clean sans-serif for UI links */
+  font-size: 13px;
+}
+
+.luxury-footer a:hover {
+  color: #f4f1ea; /* Soft glow effect on hover */
+}
+
+/* Brand Column */
+.footer-logo {
+  font-size: 24px;
+  letter-spacing: 0.3em;
+  color: #f4f1ea !important;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.brand-philosophy {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 220px;
+}
+
+.social-links a {
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+/* Newsletter Column */
+.newsletter-column p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  border-bottom: 1px solid #4a4338; /* Minimalist underline input instead of a box */
+  padding-bottom: 5px;
+}
+
+.newsletter-form input {
+  background: transparent;
+  border: none;
+  color: #f4f1ea;
+  padding: 10px 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+}
+
+.newsletter-form button {
+  background: transparent;
+  border: none;
+  color: #baaf9f;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding-left: 10px;
+}
+
+.newsletter-form button:hover {
+  color: #f4f1ea;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  margin-top: 80px;
+  border-top: 1px solid #221f1a; /* Subtle separation line */
+  padding-top: 30px;
+}
+
+.footer-bottom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+
+.legal-links a {
+  font-size: 11px;
+  margin-left: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  .brand-column, .newsletter-column {
+    grid-column: span 2;
+  }
+  .brand-philosophy {
+    max-width: 100%;
+  }
+  .footer-bottom-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .legal-links a {
+    margin: 0 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .brand-column, .newsletter-column {
+    grid-column: span 1;
+  }
+}
+
+
+
